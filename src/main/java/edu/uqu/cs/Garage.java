@@ -21,6 +21,8 @@ public class Garage{
      * private classType [] varName = new classType[size];
      *
      */
+    private Car [] cars = new Car[3];
+    
 
     /************ Part 2 **************/
     /**
@@ -31,6 +33,7 @@ public class Garage{
      * public dataType varName= value;
      *
      */
+    public int countCars = 0;
 
     /************ Part 3 **************/
     /**
@@ -45,6 +48,11 @@ public class Garage{
      *     }
      *}
      */
+    public Garage(){
+        for(int i = 0; i<cars.length; i++){  // عداد يشوف عدد السيارات داخل المواقف i
+            cars[i] = new Car();
+        }
+    }
 
     /************ Part 4 **************/
     /**
@@ -59,8 +67,22 @@ public class Garage{
      * Syntax:
      * public void methodName(String m)
      */
+    // i do not get this part very well :(
+    // لازم اتحقق اذا كانت السيارة المدخلة موجودة او لا
+    //   يعني رح تصير 1countCars اذا كانت السيارة موجودة لازم نزود 
 
+    public void addCar ( String m){ // تاخد باراميتر ستريغ اللي هو موديل السيارة
+        for (int i = 0; i<cars.length; i++) { //لوب  يشيك على كل موقف
 
+           if(cars.length != countCars){
+              Car[countCars].setmodel();
+                  countCars ++;
+
+           }
+        } 
+    }
+
+    
     /************ Part 5 **************/
     /**
      * Define moveOut(String) that moves the car (by model) out of the garage; 
@@ -71,6 +93,10 @@ public class Garage{
      * public void methodName(String m)
      *
      */
+    public void moveOut(String m){
+        //if(m)
+
+    }
 
 
 
@@ -84,6 +110,10 @@ public class Garage{
      * public void methodName(String m)
      *
      */
+    public void moveIn(String m){
+        
+        
+    }
 
 
     /************ Part 7 **************/
@@ -95,6 +125,14 @@ public class Garage{
      * public void methodName(String m)
      *
      */
+    public void listCars(String m){
+        // رح نستخدم لوب 
+        System.out.println("All cars in the garage are:\nCar1: ");
+        for (int i = 0; i<cars.length; i++){
+            if(countCars)
+        }
+
+    }
 
 
 
